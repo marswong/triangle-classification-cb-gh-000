@@ -15,6 +15,8 @@ class Triangle
   end
 end
 
-class TriangleError
-
+class TriangleError < StandardError
+  def message
+    "The sides combination is illegal"
+  end
 end
