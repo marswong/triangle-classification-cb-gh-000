@@ -11,7 +11,7 @@ class Triangle
     a = @a
     b = @b
     c = @c
-    
+
     if a == b && b == c
       :equilateral
     elsif a == b || b == c || a == c
