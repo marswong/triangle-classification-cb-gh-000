@@ -1,7 +1,17 @@
 class Triangle
-  attr_accessor :kind
+  attr_accessor :a, :b, :c
 
   def initialize(a, b, c)
+    @a = a
+    @b = b
+    @c = c
+  end
+
+  def kind
+    a = @a
+    b = @b
+    c = @c
+    
     if a == b && b == c
       @kind = :equilateral
     elsif a == b || b == c || a == c
@@ -11,7 +21,7 @@ class Triangle
       @kind = :scalene
     else
       raise TriangleError
-    end
+    end    
   end
 end
 
