@@ -3,7 +3,7 @@ class Triangle
 
   def initialize(a, b, c)
     if a == b == c
-      @kine = "equilateral"      
+      @kine = :equilateral
     end
   end
 end
