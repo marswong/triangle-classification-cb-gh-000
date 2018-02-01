@@ -20,7 +20,7 @@ class Triangle
           ((a + b > c && a - b < c) || (a + c > b && a - c < b) || (b + c > a || b - c < a))
       :scalene
     else
-      raise TriangleError
+      TriangleError
     end
   end
 end
