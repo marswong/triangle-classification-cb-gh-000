@@ -9,6 +9,8 @@ class Triangle
     elsif a > 0 && b > 0 && c > 0 &&
           ((a + b > c && a - b < c) || (a + c > b && a - c < b) || (b + c > a || b - c < a))
       @kind = :scalene
+    else
+      raise TriangleError
     end
   end
 end
